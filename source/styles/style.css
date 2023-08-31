@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+
+body {
+  font-family: Barlow, serif;
+  background: linear-gradient(90deg, #05effd 0%, #8200ff 100%);
+}
+
+
+footer {
+    
+    padding-top: 1em;
+    background-color: rgb(37, 36, 36);
+}
+
+.nav-link {
+  color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+  color: dimgrey;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-toggler {
+  background-color: dimgray;
+}
+
+.sidebar {
+  color: aquamarine;
+  background-color: #240245;
+}
+
+.sidebar a {
+  color: pink;
+}
+
+.slide-text,
+.footer-text {
+    font-size: 1.5rem;
+    margin: auto auto;
+    color:aquamarine;
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.footer-text {
+    font-size: 1em;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.call-anim {
+    animation: 2s call-animation s infinite normal forwards;
+}
+
+@keyframes call-animation {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+.btn-outline-primary {
+    background-color: red;
+}
